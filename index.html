@@ -6,7 +6,9 @@
     <title>T-Mobile</title>
 </head>
 <style>
-   
+   *{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
   .cont-cent {
     max-width: 1140px;
     margin: 0 auto;
@@ -66,8 +68,13 @@
   #glow-form input,
   #glow-form textarea {
     background: #fff;
-    margin: 18px 0px;
+    /* margin: 18px 0px; */
+    padding: 10px;
   }
+  .banner-sliders {
+    padding: 30px;
+    background: #e40074;
+}
   [type="submit"] {
     height: 39px !important;
     line-height: 10px !important;
@@ -78,7 +85,10 @@
   }
   .footer-top-banner {
     margin: 33px auto;
-    width: 86%;
+    width: 100%;
+  }
+  .footer-top-banner img{
+    width: 100%;
   }
   .footer-setup {
     background: #d80475;
@@ -96,6 +106,16 @@
     border-radius: 10px;
     font-weight: bold;
   }
+  form#glow-form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+input[type="submit"] {
+    background: #000 !important;
+    color: #fff;
+}
 </style>
 
 <body>
@@ -125,11 +145,11 @@
             <a class="button-call" href="tel:+18444392980">Call Us Now</a>
           </div>
           <div class="banner-sliders">
-            <img
-              src="https://vfrazier.online/wp-content/uploads/2023/10/unnamed1.webp"
+            <img style=" width: 100%;" 
+              src="https://www.t-mobile.com/content/dam/digx/tmobile/us/en/devices/apple/iphone-16/fg-iPhone-16-lineup-4x3.png"
             />
           </div>
-          <div class="form-section">
+          <div class="form-section" style="margin-top: 30px;">
             <form id="glow-form">
               <input type="text" placeholder="Your Name" />
               <input type="email" placeholder="Your Email" />
@@ -144,7 +164,7 @@
           </div>
           <div class="footer-top-banner">
             <img
-              src="https://vfrazier.online/wp-content/uploads/2023/10/Branding-inBanner-Advertising-Pink-T-Mobile.png"
+              src="https://www.t-mobile.com/content/dam/digx/tmobile/us/en/lifestyle/outdoors/fg-family-hamock-smartcrop1.jpg"
             />
           </div>
           <div class="footer-setup">
